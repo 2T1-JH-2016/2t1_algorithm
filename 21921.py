@@ -5,8 +5,8 @@ visit = list(map(int,input().split()))
 if(max(visit)):
     cnt = 1
     mx = res = sum(visit[:x])
-    for i in range(x,a):
-        res += visit[i]-visit[i-x]
+    for i in range(x,a):  
+        res += visit[i]-visit[i-x] 
         if res > mx :
             mx = res
             cnt = 1
